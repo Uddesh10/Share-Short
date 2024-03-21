@@ -1,0 +1,29 @@
+.custom-nav{
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    height: 7vh;
+}
+
+.nav-item a,button{
+    font-size: 20px;
+}
+
+.nav-item img{
+    width: 18px;
+    height: 18px;
+}
+
+.share-button{
+    border-radius: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.profile{
+    height: 40px;
+    width: 40px;
+    background-color: #D2E823;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1E2330;
+}

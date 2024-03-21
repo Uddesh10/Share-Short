@@ -1,1 +1,42 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg bg-body-tertiary custom-nav m-2 fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Share Short</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item d-flex align-items-center mx-2">
+                    <img src="../../../assets/header-icons/link.png" alt="links">
+                    <a class="nav-link" routerLink="/app/home/links" aria-current="page" href="#">Links</a>
+                </li>
+                <li class="nav-item d-flex align-items-center mx-2">
+                    <img src="../../../assets/header-icons/shop.png" alt="store">
+                    <a class="nav-link" routerLink="/app/home/store">Store</a>
+                </li>
+                <li class="nav-item d-flex align-items-center mx-2">
+                    <img src="../../../assets/header-icons/design.png" alt="design">
+                    <a class="nav-link" routerLink="/app/home/design">Design</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item mx-3">
+                    <!-- <div class="share-button d-flex align-items-center">
+                        <img src="../../../assets/header-icons/share.png" alt="share">
+                        <a class="nav-link" href="#">Share</a>
+                    </div> -->
+                    <button class="nav-link d-flex align-items-center share-button"><img
+                            src="../../../assets/header-icons/share.png" alt="share">
+                        <span class="mx-1">Share</span></button>
+                </li>
+                <li class="nav-item">
+                    <span class="profile nav-link cursor d-flex align-items-center justify-content-center mx-2">
+                        UN
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
