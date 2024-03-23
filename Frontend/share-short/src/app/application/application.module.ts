@@ -7,6 +7,7 @@ import { PreviewComponent } from './preview/preview.component';
 import { ApplicationRoutingModule } from './application-routing.module';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 
@@ -21,7 +22,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     ApplicationRoutingModule,
-    SharedModule
+    SharedModule,
+    DragDropModule
   ]
 })
 export class ApplicationModule { }
