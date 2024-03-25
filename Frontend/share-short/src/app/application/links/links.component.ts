@@ -21,7 +21,7 @@ export class LinksComponent {
     }
   ];
 
-  drop(event: CdkDragDrop<string[]>) {
+  drop(event: CdkDragDrop<any[]>) {
     moveItemInArray(this.extraLink, event.previousIndex, event.currentIndex);
   }
 }

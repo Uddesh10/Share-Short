@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-store',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class StoreComponent {
 
+  constructor(public dialog: MatDialog){}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(AddProductDialog , {width:'25%'});
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+}
+
+@Component({
+  selector: 'add-product-ialog',
+  templateUrl: './add-product.dialog.html',
+  styleUrls:['./store.component.css']
+})
+export class AddProductDialog {
+  
 }

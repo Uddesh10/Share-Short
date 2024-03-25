@@ -1,1 +1,45 @@
-<p>store works!</p>
+<div class="mx-5">
+    <div class="section my-4 p-4">
+        <div class="row">
+            <div class="col-12 line-height-0 mb-3">
+                <h2>Your Store</h2>
+                <p>Add product details here.</p>
+            </div>
+
+            <div class="my-3">
+                <div class="row">
+                    <div class="col-3 mb-3">
+                        <div class="store-card d-flex flex-column">
+                            <img class="p-2"
+                                src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                            <span class="px-2 h5">This is title</span>
+                            <span class="px-2 h6">$30</span>
+                            <div class="d-flex justify-content-between p-2 align-items-center">
+                                <span>
+                                    <i class="bi bi-pencil cursor" style="font-size: 18px;"></i>
+                                    <i class="bi bi-trash3-fill mx-2 cursor" style="font-size: 18px; color: red;"></i>
+                                </span>
+                                <span>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckDefault">
+                                    </div>
+
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3 mb-3">
+                        <div (click)="openDialog()"
+                            class="add-store-card d-flex justify-content-center align-items-center cursor">
+                            <i class="bi bi-plus-circle-fill" style="color: #e0e2d9; font-size: 48px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

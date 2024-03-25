@@ -1,0 +1,40 @@
+<h2 mat-dialog-title class="text-center">Add Product</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div>
+                <label for="productUrl" class="form-label fw-medium">URL</label>
+                <input type="text" class="form-control" id="name" aria-describedby="productUrl">
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div>
+                <label for="productTitle" class="form-label fw-medium">Title</label>
+                <input type="text" class="form-control" id="name" aria-describedby="productTitle">
+            </div>
+        </div>
+        <div class="col-12 mb-3">
+            <div>
+                <label for="productImage" class="form-label fw-medium">Upload Image</label>
+                <input type="file" accept=".png , .jpg , .jpeg" class="form-control" id="profile"
+                    aria-describedby="productImage">
+            </div>
+        </div>
+        <div class="col-6 mb-3">
+            <div>
+                <label for="productPrice" class="form-label fw-medium">Price</label>
+                <input type="number" class="form-control" id="name" aria-describedby="productPrice">
+            </div>
+        </div>
+        <div class="col-6 mb-3">
+            <label for="currencySelect" class="form-label fw-medium">Currency</label>
+            <select id="currencySelect" class="form-select" aria-label="Default select example">
+                <option value="inr">INR</option>
+                <option value="usd">USD</option>
+            </select>
+        </div>
+        <div class="col-12 mb-3">
+            <button class="btn btn-primary col-12" style="border-radius: 20px;">Add Product</button>
+        </div>
+    </div>
+</mat-dialog-content>
