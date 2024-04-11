@@ -1,7 +1,10 @@
 .mobile-layout{
     border: 10px solid black;
     border-radius: 35px;
-    width: 15vw;
-    height: 60vh;
+    width: 350px;
+    height: 700px;
     position: fixed;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

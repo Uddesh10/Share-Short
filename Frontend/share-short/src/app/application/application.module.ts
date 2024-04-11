@@ -11,6 +11,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { FormsModule } from '@angular/forms';
+import { UserViewComponent } from '../shared/user-view/user-view.component';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     StoreComponent,
     PreviewComponent,
     HomeComponent,
-    AddProductDialog
+    AddProductDialog,
   ],
   imports: [
     CommonModule,
@@ -29,7 +30,7 @@ import { FormsModule } from '@angular/forms';
     DragDropModule,
     MatTooltipModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class ApplicationModule { }
