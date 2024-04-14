@@ -11,3 +11,15 @@ body {
 .cursor{
   cursor: pointer;
 }
+
+
+.product-modal {
+  width: 25%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .product-modal {
+      width: 100%;
+    }
+}

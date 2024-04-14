@@ -11,7 +11,7 @@ export class StoreComponent {
   constructor(public dialog: MatDialog){}
 
   openDialog() {
-    const dialogRef = this.dialog.open(AddProductDialog , {width:'25%'});
+    const dialogRef = this.dialog.open(AddProductDialog , {panelClass:'product-modal'});
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

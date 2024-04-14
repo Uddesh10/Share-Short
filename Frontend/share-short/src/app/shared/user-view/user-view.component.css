@@ -9,6 +9,7 @@
 .extraLinks{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: 0.1s all ease-in-out;
+    background-color: #fff;
 }
 
 .extraLinks:hover{
@@ -20,6 +21,7 @@ transform: scale(1.02);
 }
 
 .links i {
+    /* color: #fff; */
     font-size: 1.2rem;
     margin-block: 12px;
     transition: 0.1s all ease-in-out;

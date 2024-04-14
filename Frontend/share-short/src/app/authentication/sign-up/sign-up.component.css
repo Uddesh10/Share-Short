@@ -1,0 +1,36 @@
+.side-image {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/012/483/071/original/abstract-violet-and-purple-liquid-gradient-wave-decorative-background-smooth-flowing-layered-curved-waves-wallpaper-vector.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.welcome-back-text {
+    font-size: 6rem;
+    margin-top: 30%;
+    line-height: 100%;
+    color: white;
+}
+
+.login-text {
+    font-size: 4rem;
+    line-height: 100%;
+}
+
+.login-sub-text {
+    font-size: 2em;
+}
+
+.sign-up-text {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .side-image {
+        display: none;
+    }
+}

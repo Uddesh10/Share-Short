@@ -1,9 +1,12 @@
 <app-header></app-header>
-<div class="row mx-5">
-    <div class="col-8" style="border-right: 2px solid #e0e2d9">
+<div class="row mx-2 mx-xxl-5">
+    <div class="col-12 col-xxl-8 main-content">
         <router-outlet></router-outlet>
     </div>
-    <div class="col-4">
+    <div class="col-4 app-preview">
         <app-preview></app-preview>
+    </div>
+    <div class="fixed-bottom text-center preview-button">
+        <button class="btn btn-lg m-2" (click)="openPreview()">Preview</button>
     </div>
 </div>

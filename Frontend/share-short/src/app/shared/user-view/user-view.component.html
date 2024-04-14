@@ -1,59 +1,64 @@
-<div class="container">
-    <div class="row">
+<div
+    style="background-image: url(); background-repeat: no-repeat; background-position: center; background-size: cover; min-height: 100%;">
+    <div class="container">
+        <div class="row">
 
-        <div class="col-12 d-flex flex-column align-items-center justify-content-center">
-            <img class="profile mb-3" [src]="data.profile" alt="">
-            <h1 class="fw-bold">Jhon Doe</h1>
-            <p class="fw-medium text-center">{{data.about}}</p>
-        </div>
+            <div class="col-12 d-flex flex-column align-items-center justify-content-center">
+                <img class="profile mb-3" [src]="data.profile" alt="">
+                <h1 class="fw-bold">Jhon Doe</h1>
+                <p class="fw-medium text-center">{{data.about}}</p>
+            </div>
 
-        <div *ngIf="data.storeLinks.length != 0" class="col-12 mt-3 d-flex justify-content-center align-items-center">
-            <div class="custom-checkbox">
-                <input type="checkbox" id="toggle-button-checkbox" [(ngModel)]="isChecked">
-                <label class="toggle-button-switch bi" [ngClass]="isChecked?'bi-link switch-icon':'bi-shop switch-icon'"
-                    for="toggle-button-checkbox"></label>
-                <div class="toggle-button-text">
-                    <div class="toggle-button-text-on">Links</div>
-                    <div class="toggle-button-text-off">Store</div>
+            <div *ngIf="data.storeLinks.length != 0"
+                class="col-12 mt-3 d-flex justify-content-center align-items-center">
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="toggle-button-checkbox" [(ngModel)]="isChecked">
+                    <label class="toggle-button-switch bi"
+                        [ngClass]="isChecked?'bi-link switch-icon':'bi-shop switch-icon'"
+                        for="toggle-button-checkbox"></label>
+                    <div class="toggle-button-text">
+                        <div class="toggle-button-text-on">Links</div>
+                        <div class="toggle-button-text-off">Store</div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div *ngIf="isChecked" class="col-12 mt-3 d-flex justify-content-center flex-column align-items-center">
-            <div [ngClass]="inApp?'col-12':'col-lg-5 col-12'"
-                class="p-1 extraLinks mb-3 cursor d-flex align-items-center justify-content-start"
-                *ngFor="let extralinks of data.extraLinks">
-                <i [class]="'p-1 bi bi-'+extralinks.iconKey"></i>
-                <span class="m-2">{{extralinks.label}}</span>
-            </div>
-        </div>
-
-        <div *ngIf="!isChecked" class="col-12 mt-3 d-flex justify-content-center flex-column align-items-center">
-            <div class="p-1 mb-3 cursor d-flex align-items-center justify-content-center flex-wrap"
-                [ngClass]="inApp?'col-12':'col-lg-5 col-12'">
-                <div *ngFor="let storelink of data.storeLinks"
-                    class="store-card d-flex flex-column col-5 m-2 justify-content-center">
-                    <img class="p-2" [src]="storelink.productImage" alt="">
-                    <div class="m-2 text-center ">{{storelink.title}}</div>
-                    <div class="my-2 text-center">{{storelink.currency+storelink.price}}</div>
+            <div *ngIf="isChecked" class="col-12 mt-3 d-flex justify-content-center flex-column align-items-center">
+                <div [ngClass]="inApp?'col-12':'col-lg-5 col-12'"
+                    class="p-1 extraLinks mb-3 cursor d-flex align-items-center justify-content-start"
+                    *ngFor="let extralinks of data.extraLinks">
+                    <i [class]="'p-1 bi bi-'+extralinks.iconKey"></i>
+                    <span class="m-2">{{extralinks.label}}</span>
                 </div>
             </div>
-        </div>
 
-        <div *ngIf="isChecked" class="col-12 mt-3 d-flex justify-content-center align-items-center ">
-            <div class="col-12 d-flex justify-content-center align-content-center flex-wrap links">
-                <i class="bi bi-facebook cursor px-2" *ngIf="data.facebook != ''"></i>
-                <i class="bi bi-instagram cursor px-2" *ngIf="data.instagram != ''"></i>
-                <i class="bi bi-twitter-x cursor px-2" *ngIf="data.xTwitter != ''"></i>
-                <i class="bi bi-threads cursor px-2" *ngIf="data.threads != ''"></i>
-                <i class="bi bi-telegram cursor px-2" *ngIf="data.telegram != ''"></i>
-                <i class="bi bi-whatsapp cursor px-2" *ngIf="data.whatsapp != ''"></i>
-                <i class="bi bi-youtube cursor px-2" *ngIf="data.youtube != ''"></i>
-                <i class="bi bi-discord cursor px-2" *ngIf="data.discord != ''"></i>
-                <i class="bi bi-github cursor px-2" *ngIf="data.github != ''"></i>
-                <i class="bi bi-linkedin cursor px-2" *ngIf="data.linkedin != ''"></i>
-                <i class="bi bi-snapchat cursor px-2" *ngIf="data.snapchat != ''"></i>
-                <i class="bi bi-envelope cursor px-2" *ngIf="data.email != ''"></i>
+            <div *ngIf="!isChecked" class="col-12 mt-3 d-flex justify-content-center flex-column align-items-center">
+                <div class="p-1 mb-3 cursor d-flex align-items-center justify-content-center flex-wrap"
+                    [ngClass]="inApp?'col-12':'col-lg-5 col-12'">
+                    <div *ngFor="let storelink of data.storeLinks"
+                        class="store-card d-flex flex-column col-5 m-2 justify-content-center">
+                        <img class="p-2" [src]="storelink.productImage" alt="">
+                        <div class="m-2 text-center ">{{storelink.title}}</div>
+                        <div class="my-2 text-center">{{storelink.currency+storelink.price}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="isChecked" class="col-12 mt-3 d-flex justify-content-center align-items-center ">
+                <div class="col-12 d-flex justify-content-center align-content-center flex-wrap links">
+                    <i class="bi bi-facebook cursor px-2" *ngIf="data.facebook != ''"></i>
+                    <i class="bi bi-instagram cursor px-2" *ngIf="data.instagram != ''"></i>
+                    <i class="bi bi-twitter-x cursor px-2" *ngIf="data.xTwitter != ''"></i>
+                    <i class="bi bi-threads cursor px-2" *ngIf="data.threads != ''"></i>
+                    <i class="bi bi-telegram cursor px-2" *ngIf="data.telegram != ''"></i>
+                    <i class="bi bi-whatsapp cursor px-2" *ngIf="data.whatsapp != ''"></i>
+                    <i class="bi bi-youtube cursor px-2" *ngIf="data.youtube != ''"></i>
+                    <i class="bi bi-discord cursor px-2" *ngIf="data.discord != ''"></i>
+                    <i class="bi bi-github cursor px-2" *ngIf="data.github != ''"></i>
+                    <i class="bi bi-linkedin cursor px-2" *ngIf="data.linkedin != ''"></i>
+                    <i class="bi bi-snapchat cursor px-2" *ngIf="data.snapchat != ''"></i>
+                    <i class="bi bi-envelope cursor px-2" *ngIf="data.email != ''"></i>
+                </div>
             </div>
         </div>
     </div>

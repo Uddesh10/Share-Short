@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LinksComponent } from './links/links.component';
-import { DesignComponent } from './design/design.component';
 import { StoreComponent , AddProductDialog } from './store/store.component';
 import { PreviewComponent } from './preview/preview.component';
 import { ApplicationRoutingModule } from './application-routing.module';
@@ -11,13 +10,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { MatDialogModule } from "@angular/material/dialog";
 import { FormsModule } from '@angular/forms';
-import { UserViewComponent } from '../shared/user-view/user-view.component';
 
 
 @NgModule({
   declarations: [
     LinksComponent,
-    DesignComponent,
     StoreComponent,
     PreviewComponent,
     HomeComponent,

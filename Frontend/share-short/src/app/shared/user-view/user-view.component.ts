@@ -58,6 +58,62 @@ export class UserViewComponent {
         link:"www.amazon.com",
         enabled:true
     },
+    {
+        label:"My newly launched product",
+        iconKey:"amazon",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Buy Iphone from here",
+        iconKey:"apple",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Deliver package here",
+        iconKey:"box-seam",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Take off with cheaper flights",
+        iconKey:"rocket-takeoff-fill",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+    {
+        label:"My newly launched product",
+        iconKey:"amazon",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Buy Iphone from here",
+        iconKey:"apple",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Deliver package here",
+        iconKey:"box-seam",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
+     {
+        label:"Take off with cheaper flights",
+        iconKey:"rocket-takeoff-fill",
+        profile:"",
+        link:"www.amazon.com",
+        enabled:true
+    },
     ],
     storeLinks:[
       {

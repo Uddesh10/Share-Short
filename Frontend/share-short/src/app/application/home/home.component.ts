@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  openPreview(){
+    window.open('/uddesh' , 'blank')
+  }
+
 }
